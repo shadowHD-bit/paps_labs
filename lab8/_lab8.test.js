@@ -108,20 +108,15 @@ describe('Simple Test Appointment Class:', () => {
         expect(fn).toBeCalled()
         expect(fn).toBeCalledTimes(4)
     
-    
-    
         //Проверка на длину вызова
         expect(fn.mock.calls.length).toBe(4)
         
-    
         //Проверка на выполнение мок-функции
         expect(fn.mock.results[0].value).toBe(1)
         expect(fn.mock.results[1].value).toBe(4)
         expect(fn.mock.results[2].value).toBe(9)
         expect(fn.mock.results[3].value).toBe(25)
         
-    
-    
         //Демонстрации функции присваивания значении мок функции
         fn
             .mockReturnValueOnce(100)
