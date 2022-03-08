@@ -13,6 +13,23 @@
 3/ Когда вам приходится создавать множество подклассов компонентов, чтобы использовать одни и те же компоненты в разных контекстах.
 Если раньше изменение отношений в одном компоненте могли повлечь за собой лавину изменений во всех остальных компонентах, то теперь вам достаточно создать подкласс посредника и поменять в нём связи между компонентами.
 
+
+Нужен, чтобы уменьшить связанность классов между собой
 */ 
 
+//Ex1
 
+const AppointmentClass = require('./Appointment')
+const UserClass = require('./User')
+
+
+const appointmentMediator = new AppointmentClass()
+
+const FirstUser = new UserClass('Даниил', 'Андреев', appointmentMediator)
+const SecondUser = new UserClass('Алексей', 'Иванов', appointmentMediator)
+
+FirstUser.makeAppointments()
+SecondUser.makeAppointments()
+
+
+console.log(appointmentMediator.getAppointmentsList())
