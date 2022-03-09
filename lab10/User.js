@@ -6,10 +6,6 @@ class User{
         this.appointments = appointments
     }
 
-    getFIO(){
-        return (this.name, this.lastname)
-    }
-
     getName(){
         return this.name
     }

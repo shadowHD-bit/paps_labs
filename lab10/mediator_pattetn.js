@@ -19,17 +19,20 @@
 
 //Ex1
 
-const AppointmentClass = require('./Appointment')
+const AppointmentCreateClass = require('./AppointmentCreate')
 const UserClass = require('./User')
 
 
-const appointmentMediator = new AppointmentClass()
+const appointmentMediator = new AppointmentCreateClass()
 
 const FirstUser = new UserClass('Даниил', 'Андреев', appointmentMediator)
 const SecondUser = new UserClass('Алексей', 'Иванов', appointmentMediator)
+const ThirdUser = new UserClass('Иван', 'Петров', appointmentMediator)
+
 
 FirstUser.makeAppointments()
 SecondUser.makeAppointments()
+ThirdUser.makeAppointments()
 
 
 console.log(appointmentMediator.getAppointmentsList())

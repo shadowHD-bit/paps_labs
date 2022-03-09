@@ -16,7 +16,7 @@ console.log('\nEx 1:')
 const TestHospitalDB = require('./DataBase')
 
 console.log('При попытке подключиться к бд с ip 192.168.0.1 в первый раз:')
-const TestIPAdreesOne = new TestHospitalDB('192.168.0.1')
+const TestIPAdreesOne = new TestHospitalDB('192.111.0.1')
 console.log(TestIPAdreesOne.getIPconnetctionDB())
 
 
@@ -29,7 +29,7 @@ console.log(TestIPAdreesTwo.getIPconnetctionDB())
 console.log('\nEx 2:')
 const TestComments = require('./Comment')
 
-const TestMainComment = new TestComments(5)
+const TestMainComment = new TestComments(0)
 
 const User1 = new TestComments(0)
 const User2 = new TestComments(0)
