@@ -4,7 +4,7 @@ class Strategy {
       this.discount = discount
     }
   }
-  //DSVDS
-  SDVVSDV
+
+
 
   module.exports = Strategy
