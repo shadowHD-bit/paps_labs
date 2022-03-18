@@ -19,6 +19,11 @@ class CreateStrategy {
     getStrategyName(name) {
       return this.strategys.find(startegyGet => startegyGet.name === name)
     }
+
+
+    getListStrategy(){
+      return this.strategys
+    }
   }
 
 

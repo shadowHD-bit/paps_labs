@@ -22,4 +22,4 @@ const accessThird = new AccessClass(UserThird).openAdminPanel()
 console.log('\nПример 2. Проверка введенных данных, используя паттерн Прокси:')
 const Validator = require('./ValidRegistration')
 
-const newUser = new Validator(new UserClass('Alexandr', 'Ivanov', 'test@mail.ru', 'dsvDdfdfgv1', '88009509663', '05.04.2000', 'USER')).mainValidCheck()
+const newUser = new Validator(new UserClass('Alexandr', 'Ivanov', 'test@mail.ru', 'dsOvfgv1', '88009509663', '05.04.2000', 'USER')).mainValidCheck()
