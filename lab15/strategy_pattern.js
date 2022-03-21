@@ -1,6 +1,6 @@
 //Паттерн опредяляет схожие алгоритмы и помещяет из в каждый отдельный класс.
 
-//При расширении возможностей программы
+//При расширении возможностей прогвыраммы
 
 const CountPriceTreatmentTeethClass = require('./CountPriceClass')
 const { familyTreatment, inviteFriend, treatmentSixTeeth, newTreatment } = require('./StrategyInUsersOnTratmentCaries')
